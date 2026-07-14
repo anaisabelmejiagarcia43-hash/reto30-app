@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1" />
+    <title>Reto 30 Días</title>
+    <meta name="description" content="Tu planificador diario de entrenamiento, alimentación y seguimiento para 30 días de transformación." />
+
+    <!-- PWA -->
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#6b7353" />
+    <meta name="background-color" content="#faf8f3" />
+
+    <!-- Android / Chrome -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16.png" />
+
+    <!-- iOS Add to Home Screen -->
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Reto 30 Días" />
+
+    <!-- Tailwind (utility classes only, no build step required) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      html, body, #root { height: 100%; }
+      body { margin: 0; background: #faf8f3; overscroll-behavior-y: none; }
+      * { -webkit-tap-highlight-color: transparent; }
+      ::-webkit-scrollbar { display: none; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
